@@ -76,6 +76,13 @@ import profilePicture from "assets/images/team-3.jpg";
 
 const routes = [
   {
+    type: "flat",
+    name: "home",
+    key: "home",
+    route: "/",
+    component: <Analytics />,
+  },
+  {
     type: "collapse",
     name: "Brooklyn Alice",
     key: "brooklyn-alice",
@@ -312,7 +319,7 @@ const routes = [
           },
           {
             name: "Cover",
-            key: "cover",
+            key: "signin-cover",
             route: "/authentication/sign-in/cover",
             component: <SignInCover />,
           },
@@ -330,7 +337,7 @@ const routes = [
         collapse: [
           {
             name: "Cover",
-            key: "cover",
+            key: "signup-cover",
             route: "/authentication/sign-up/cover",
             component: <SignUpCover />,
           },
